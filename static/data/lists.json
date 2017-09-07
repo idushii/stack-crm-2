@@ -1,0 +1,22 @@
+{
+  "SubCompany": ["V&O", "S.R.O", "UE"],
+  "SubCompany 1": ["V&O", "S.R.O", "UE"],
+  "SubCompany 2": ["V&O", "S.R.O", "UE"],
+  "User": ["User 1", "User 2", "User 3"],
+  "Customer": ["Customer 1", "Customer 2", "Customer 3"],
+  "Installing windows": [
+    { "Select": "Вариант установки 1", "Price": 10 },
+    { "Select": "Вариант установки 2", "Price": 20 },
+    { "Select": "Вариант установки 3", "Price": 30 }
+  ],
+  "Installing rollads": [
+    { "Select": "Вариант установки роллад 1", "Price": 10 },
+    { "Select": "Вариант установки роллад 2", "Price": 20 },
+    { "Select": "Вариант установки роллад 3", "Price": 30 }
+  ],
+  "Installing el rollads": [
+    { "Select": "Вариант установки эл роллад 1", "Price": 10 },
+    { "Select": "Вариант установки эл роллад 2", "Price": 20 },
+    { "Select": "Вариант установки эл роллад 3", "Price": 30 }
+  ]
+}

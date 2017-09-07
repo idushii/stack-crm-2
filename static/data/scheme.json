@@ -1,0 +1,59 @@
+{
+  "head": {
+    "Datum": { "label": "Datum", "type": "data", "selector": " m2", "value": "" },
+    "SubCompany": { "label": "Подразделение", "type": "autocomplete", "selector": "m5 ", "list": {}, "value": ""  },
+    "User": { "label": "Ответственный", "type": "autocomplete", "selector": "m5 ", "list": {}, "value": ""  },
+    "Customer": { "label": "Kunde", "type": "autocomplete", "selector": "m7 ", "list": {}, "value": ""  },
+    "Objekt": { "label": "Objekt", "selector": " m7", "value": ""  }
+  },
+  "Aufschlag": {
+    "Rating": { "label": "Курс", "selector": "m3", "value": "1" },
+    "Procent_1": { "label": "Процент", "selector": "m1", "value": 50 },
+    "SubCompany 1": { "label": "Подразделение", "type": "autocomplete", "selector": "m3", "list": {}, "value": ""  },
+    "Procent_2": { "label": "Процент", "selector": "m1", "value": 10 },
+    "SubCompany 2": { "label": "Подразделение", "type": "autocomplete", "selector": "m3", "list": {}, "value": ""  },
+    "Drive": { "label": "Доставка", "selector": "m1", "value": "0" }
+  },
+  "Einbau": {
+    "Dismantling windows": {
+      "Select": { "value": "Демонтаж окон", "type": "label", "selector": "m4" },
+      "Price": { "label": "Цена", "selector": "m2", "value": 0 },
+      "PriceWork": { "label": "Накрутка", "selector": "m2", "value": "0" },
+      "IncomeTaxes": { "label": "Налог", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Dismantling windows.PriceWork'*(42.86)/100" },
+      "Sum": { "label": "Итого", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Dismantling windows.Price'+'Einbau.Dismantling windows.IncomeTaxes'+'Einbau.Dismantling windows.PriceWork'" }
+    },
+    "Installing windows": {
+      "Select": { "label": "Выбрать вариант установки окон", "type": "autocomplete", "selector": "m4", "list": {}, "value": "" },
+      "Price": { "label": "Цена", "selector": "m2", "disabled": true, "value": 0, "formula": "(('Einbau.Installing windows.Select.Price'*('Aufschlag.Procent_1'+100))/100)*('Aufschlag.Procent_2'+100)/100" },
+      "PriceWork": { "label": "Накрутка", "selector": "m2", "value": "0" },
+      "IncomeTaxes": { "label": "Налог", "selector": "m2", "disabled": true, "formula": "'Einbau.Installing windows.PriceWork'*(42.86)/100" , "value": "0"},
+      "Sum": { "label": "Итого", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Installing windows.Price'+'Einbau.Installing windows.IncomeTaxes'+'Einbau.Installing windows.PriceWork'" }
+    },
+    "Dismantling of the rolls": {
+      "Select": { "value": "Демонтаж ролад", "type": "label", "selector": "m4"},
+      "Price": { "label": "Цена", "selector": "m2", "value": 0 },
+      "PriceWork": { "label": "Накрутка", "selector": "m2", "value": "0" },
+      "IncomeTaxes": { "label": "Налог", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Dismantling of the rolls.PriceWork'*(42.86)/100" },
+      "Sum": { "label": "Итого", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Dismantling of the rolls.Price'+'Einbau.Dismantling of the rolls.IncomeTaxes'+'Einbau.Dismantling of the rolls.PriceWork'" }
+    },
+    "Installing rollads": {
+      "Select": { "label": "Выбрать вариант установки роллады", "type": "autocomplete", "selector": "m4", "list": {}, "value": ""  },
+      "Price": { "label": "Цена", "selector": "m2", "disabled": true, "value": 0, "formula": "(('Einbau.Installing rollads.Select.Price'*('Aufschlag.Procent_1'+100))/100)*('Aufschlag.Procent_2'+100)/100" },
+      "PriceWork": { "label": "Накрутка", "selector": "m2", "value": "0" },
+      "IncomeTaxes": { "label": "Налог", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Installing rollads.PriceWork'*(42.86)/100" },
+      "Sum": { "label": "Итого", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Installing rollads.Price'+'Einbau.Installing rollads.IncomeTaxes'+'Einbau.Installing rollads.PriceWork'" }
+    },
+    "Installing el rollads": {
+      "Select": { "label": "Выбрать вариант установки эл. роллады", "type": "autocomplete", "selector": "m4", "list": {}, "value": ""  },
+      "Price": { "label": "Цена", "selector": "m2", "disabled": true, "value": 0, "formula": "(('Einbau.Installing el rollads.Select.Price'*('Aufschlag.Procent_1'+100))/100)*('Aufschlag.Procent_2'+100)/100" },
+      "PriceWork": { "label": "Накрутка", "selector": "m2", "value": "0" },
+      "IncomeTaxes": { "label": "Налог", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Installing el rollads.PriceWork'*(42.86)/100" },
+      "Sum": { "label": "Итого", "selector": "m2", "disabled": true, "value": "0", "formula": "'Einbau.Installing el rollads.Price'+'Einbau.Installing el rollads.IncomeTaxes'+'Einbau.Installing el rollads.PriceWork'" }
+    }
+  }, 
+  "sum": {
+    "Sum price": { "label": "Закупка", "selector": "m2", "value": "0", "disabled": true, "formula": "'Einbau.Dismantling windows.Price'+'Einbau.Installing windows.Price'+'Einbau.Dismantling of the rolls.Price'+'Einbau.Installing rollads.Price'+'Einbau.Installing el rollads.Price'" },
+    "Sum income taxes": { "label": "Налог", "selector": "m2", "value": "0", "disabled": true, "formula": "'Einbau.Dismantling windows.IncomeTaxes'+'Einbau.Installing windows.IncomeTaxes'+'Einbau.Dismantling of the rolls.IncomeTaxes'+'Einbau.Installing rollads.IncomeTaxes'+'Einbau.Installing el rollads.IncomeTaxes'" },
+    "Sum price work": { "label": "Накрутка", "selector": "m2", "value": "0", "disabled": true, "formula": "'Einbau.Dismantling windows.PriceWork'+'Einbau.Installing windows.PriceWork'+'Einbau.Dismantling of the rolls.PriceWork'+'Einbau.Installing rollads.PriceWork'+'Einbau.Installing el rollads.PriceWork'" }
+  }
+}

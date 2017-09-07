@@ -1,0 +1,96 @@
+[
+  [{
+      "Number": { "disabled": true, "value": "AF-170001", "label": "Anfrage Nr." },
+      "Data": { "type": "data", "value": "05-08-2017", "label": "Datum" },
+      "SubCompany": {
+        "type": "autocomplete",
+        "value": "V&O s.r.o",
+        "label": "Подразделение",
+        "list": { "V&O s.r.o": null, "Подразделение 2": null }
+      },
+      "User": {
+        "type": "autocomplete",
+        "value": "VO",
+        "label": "Ответственный",
+        "list": { "VO": null, "User 2": null }
+      }
+    }, {
+      "Customer": {
+        "type": "autocomplete",
+        "value": "Клиент №1",
+        "label": "Kunde",
+        "list": { "Клиент №1": null, "Клиент №2": null }
+      },
+      "Addres": { "value": "Какой-то там адрес, может быть и подстановкой или выбром из списка для этого клиента", "label": "Objekt" }
+    }, {
+      "Rate": { "value": "27", "label": "Курс", "selector": "s3" },
+      "Procent1": { "value": "60", "label": "+%", "selector": "s1" },
+      "SubCompany1": {
+        "type": "autocomplete",
+        "value": "SK/UA",
+        "label": "für",
+        "selector": "s2",
+        "list": { "SK/UA": null, "DE": null }
+      },
+      "Procent2": { "value": "20", "label": "+%", "selector": "s1" },
+      "SubCompany2": { "type": "autocomplete", "value": "DE", "label": "für", "selector": "s2", "list": { "SK/UA": null, "DE": null } },
+      "delivery": { "value": "150", "label": "Доставка: (€)", "selector": "s3" }
+    },
+    [{
+      "Select": { "type": "label", "value": "Демонтаж окна", "selector": "s4", "disabled": true },
+      "Price": { "value": "26.4", "label": "Стоимость", "selector": "s2", "disabled": false },
+      "PriceWork": { "value": "20", "label": "Прибыль", "selector": "s2" },
+      "ProcentNaPribil": { "value": "8,57", "label": "Налог", "selector": "s2", "disabled": true },
+      "Summ": { "value": "27", "disabled": true, "label": "Итого", "selector": "s2" }
+    }, {
+      "Select": {
+        "type": "autocomplete",
+        "value": "",
+        "label": "Выбрать вариант установки окна",
+        "selector": "s4",
+        "list": { "Вариант 1": null, "Вариант 2": null, "Вариант 3": null }
+      },
+      "Price": { "value": "26.4", "label": "Стоимость", "selector": "s2", "disabled": true },
+      "PriceWork": { "value": "20", "label": "Прибыль", "selector": "s2" },
+      "ProcentNaPribil": { "value": "8,57", "label": "Налог", "selector": "s2", "disabled": true },
+      "Summ": { "value": "27", "disabled": true, "label": "Итого", "selector": "s2" }
+    }, {
+      "Select": { "type": "label", "value": "Демонтаж ролады", "selector": "s4", "disabled": true },
+      "Price": { "value": "26.4", "label": "Стоимость", "selector": "s2", "disabled": false },
+      "PriceWork": { "value": "20", "label": "Прибыль", "selector": "s2" },
+      "ProcentNaPribil": { "value": "8,57", "label": "Налог", "selector": "s2", "disabled": true },
+      "Summ": { "value": "27", "disabled": true, "label": "Итого", "selector": "s2" }
+    }, {
+      "Select": {
+        "type": "autocomplete",
+        "value": "",
+        "label": "выбрать вариант установки роллады",
+        "selector": "s4",
+        "list": { "Вариант 1": null, "Вариант 2": null, "Вариант 3": null }
+      },
+      "Price": { "value": "26.4", "label": "Стоимость", "selector": "s2", "disabled": true },
+      "PriceWork": { "value": "20", "label": "Прибыль", "selector": "s2" },
+      "ProcentNaPribil": { "value": "8,57", "label": "Налог", "selector": "s2", "disabled": true },
+      "Summ": { "value": "27", "disabled": true, "label": "Итого", "selector": "s2" }
+    }, {
+      "Select": {
+        "type": "autocomplete",
+        "value": "",
+        "label": "выбрать вариант установки эл.роллады",
+        "selector": "s4",
+        "list": { "Вариант 1": null, "Вариант 2": null, "Вариант 3": null }
+      },
+      "Price": { "value": "26.4", "label": "Стоимость", "selector": "s2", "disabled": true },
+      "PriceWork": { "value": "20", "label": "Прибыль", "selector": "s2" },
+      "ProcentNaPribil": { "value": "8,57", "label": "Налог", "selector": "s2", "disabled": true },
+      "Summ": { "value": "27", "disabled": true, "label": "Итого", "selector": "s2" }
+    }],
+    [{
+      "title": "sdfsdf",
+      "count": 1,
+      "units": "Шт",
+      "price": 100,
+      "discount": 0
+    }]
+  ]
+]

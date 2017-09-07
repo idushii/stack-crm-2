@@ -1,0 +1,152 @@
+{
+    "head": {
+        "border": "none",
+        "source": [
+            [
+                {
+                    "value": "Дата: 'head.Datum'",
+                    "align": "left",
+                    "cols": 3
+                },
+                {
+                    "value": "Подразделение: 'head.SubCompany'",
+                    "align": "right",
+                    "cols": 3
+                }
+            ],
+            [
+                {
+                    "value": "Ответсвенный: 'head.User'",
+                    "align": "right",
+                    "cols": 6
+                }
+            ],
+            [
+                {
+                    "value": "Клиент: 'head.Customer'",
+                    "align": "right",
+                    "cols": 6
+                }
+            ],
+            [
+                {
+                    "value": "Доставка: 'Aufschlag.Drive'",
+                    "align": "left"
+                },
+                {
+                    "value": "Адрес: 'head.Objekt'",
+                    "align": "right",
+                    "cols": 5
+                }
+            ],
+            [
+                {
+                    "value": "",
+                    "cols": 6
+                }
+            ]
+        ]
+    },
+    "table": {
+        "border": "1px solid black",
+        "source": [
+            [
+                {
+                    "value": "Название работ",
+                    "align": "center",
+                    "width": "360px"
+                },
+                {
+                    "value": "Стоимость",
+                    "align": "center",
+                    "width": "80px"
+                },
+                {
+                    "value": "НДС",
+                    "align": "center",
+                    "width": "50px"
+                },
+                {
+                    "value": "Сумма",
+                    "align": "center",
+                    "width": "50px"
+                }
+            ],
+            [
+                {
+                    "value": "'Einbau.Dismantling windows.Select'"
+                },
+                {
+                    "value": "'Einbau.Dismantling windows.Price'+'Einbau.Dismantling windows.PriceWork'",
+                    "type": "formula"
+                },
+                {
+                    "value": "'Einbau.Dismantling windows.IncomeTaxes'"
+                },
+                {
+                    "value": "'Einbau.Dismantling windows.Sum'"
+                }
+            ],
+            [
+                {
+                    "value": "'Einbau.Installing windows.Select'"
+                },
+                {
+                    "value": "'Einbau.Installing windows.Price'+'Einbau.Installing windows.PriceWork'",
+                    "type": "formula"
+                },
+                {
+                    "value": "'Einbau.Installing windows.IncomeTaxes'"
+                },
+                {
+                    "value": "'Einbau.Installing windows.Sum'"
+                }
+            ],
+            [
+                {
+                    "value": "'Einbau.Dismantling of the rolls.Select'"
+                },
+                {
+                    "value": "'Einbau.Dismantling of the rolls.Price'+'Einbau.Dismantling of the rolls.PriceWork'",
+                    "type": "formula"
+                },
+                {
+                    "value": "'Einbau.Dismantling of the rolls.IncomeTaxes'"
+                },
+                {
+                    "value": "'Einbau.Dismantling of the rolls.Sum'"
+                }
+            ],
+            [
+                {
+                    "value": "'Einbau.Installing rollads.Select'"
+                },
+                {
+                    "value": "'Einbau.Installing rollads.Price'+'Einbau.Installing rollads.PriceWork'",
+                    "type": "formula"
+                },
+                {
+                    "value": "'Einbau.Installing rollads.IncomeTaxes'"
+                },
+                {
+                    "value": "'Einbau.Installing rollads.Sum'"
+                }
+            ],
+            [
+                {
+                    "value": "'Einbau.Installing el rollads.Select'"
+                },
+                {
+                    "value": "'Einbau.Installing el rollads.Price'+'Einbau.Installing el rollads.PriceWork'",
+                    "type": "formula"
+                },
+                {
+                    "value": "'Einbau.Installing el rollads.IncomeTaxes'"
+                },
+                {
+                    "value": "'Einbau.Installing el rollads.Sum'"
+                }
+            ]
+        ]
+    }
+}
