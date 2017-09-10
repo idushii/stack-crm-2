@@ -1,7 +1,23 @@
 <template>
-  <div>
-    Payment
+  <div class="row">
+    <div class="col m4">
+      <div class="input-field">
+        <button class="waves-effect waves-light btn btn-action-report">Отправить на почту</button>
+      </div>
+      <div class="input-field">
+        <button class="waves-effect waves-light btn btn-action-report">Отправить в СМС</button>
+      </div>
+      <div class="input-field">
+        <button class="waves-effect waves-light btn btn-action-report">Печать</button>
+      </div>
     </div>
+    <div class="col m8">
+      <ul>
+        <li>gjhsgdfj</li>
+      </ul>
+      <h4>Сумма: 000</h4>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -23,14 +39,16 @@ export default {
     }
   },
   methods: {
-    back() {},
-    save() {},
-    next() {}
+    back() { },
+    save() { },
+    next() { }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-
+<style scoped>
+.btn-action-report {
+  width: 100%;
+}
 </style>

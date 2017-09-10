@@ -64,9 +64,30 @@ export default {
       return this.$parent.emptyValues
     }
   },
-  mounted() { },
+  mounted() {
+    this.$root.$emit('update:title', this.number == 'new' ? 'Новая' : `# ${this.number}`)
+    this.$root.btns = {
+      btnRequest: { click: this.openFormRequest, text: 'Заявка' },
+      btnSend: { click: this.next, icon: 'send' }
+    }
+
+  },
   methods: {
-    setHeader() { }
+    setHeader() { },
+    openFormRequest() {
+      this.$router.push({
+        name: 'page-edit-request',
+        params: { number: this.$route.params.number }
+      })
+
+    },
+    next() {
+      this.$router.push({
+        name: 'page-edit-payment',
+        params: { number: this.$route.params.number }
+      })
+
+    }
   },
   components: {
     tasks

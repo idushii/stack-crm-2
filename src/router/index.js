@@ -11,6 +11,7 @@ import page_edit_tasks from '@/components/requests/edit-tasks'
 import page_view_drive from '@/components/drive/view'
 
 import page_edit_confirm from '@/components/confirm/edit'
+import page_edit_payment from '@/components/payment/edit'
 
 import tasks from '@/components/tasks/page'
 import page_lists_tasks from '@/components/tasks/list'
@@ -48,6 +49,10 @@ let router = new Router({
     path: '/request/confirm/:number',
     name: 'page-edit-confirm',
     component: page_edit_confirm
+  }, {
+    path: '/request/payment/:number',
+    name: 'page-edit-payment',
+    component: page_edit_payment
   }, {
     path: '/tasks',
     component: tasks,
